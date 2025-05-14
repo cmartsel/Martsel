@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>РК "ЗШ"</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    .logo:hover {
+      text-decoration: none;
+      opacity: 0.9;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .team-photo {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .rules {
+      background-color: #0066cc;
+      padding: 30px 40px;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .rules h2 {
+      color: white;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .rule-items {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .rule-item {
+      text-align: center;
+    }
+
+    .rule-item img {
+      width: 180px;
+      height: auto;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .rule-item p {
+      margin-top: 14px;
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 15px 20px;
+      }
+
+      nav {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        margin: 5px 10px 5px 0;
+      }
+
+      .rules {
+        padding: 30px 20px;
+      }
+
+      .rule-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+      }
+
+      .rules h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        font-size: 20px;
+      }
+
+      nav a {
+        font-size: 14px;
+      }
+
+      .rules h2 {
+        font-size: 24px;
+      }
+
+      .rule-item img {
+        width: 150px;
+      }
+
+      .rule-item p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">РК "ЗШ"</a>
+    <nav>
+      <a href="blog.html">Головна</a>
+      <a href="team.html">Команда</a>
+      <a href="about.html">Про нас</a>
+      <a href="contacts.html">Контакти</a>
+    </nav>
+  </header>
+
+  <img src="IMG_2229.JPG" alt="Команди на полі" class="team-photo">
+
+  <section class="rules">
+    <h2>Правила гри</h2>
+    <div class="rule-items">
+      <div class="rule-item">
+        <img src="rugby-scrum-2706456.webp" alt="Сутичка">
+        <p>Сутичка</p>
+      </div>
+      <div class="rule-item">
+        <img src="ruck-1.jpg" alt="Рак">
+        <p>Рак</p>
+      </div>
+      <div class="rule-item">
+        <img src="transformation.jpg" alt="Штрафний">
+        <p>Штрафний</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
