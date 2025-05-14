@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>РК "ЗШ" - Про нас</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    .logo:hover {
+      text-decoration: none;
+      opacity: 0.9;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+    
+    .active {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .about-section {
+      background-color: #1e88c9;
+      padding: 30px 40px 50px;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .about-section h1 {
+      color: black;
+      font-size: 42px;
+      margin-bottom: 40px;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .about-column {
+      width: 48%;
+      margin-bottom: 30px;
+    }
+
+    .about-column h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .about-column p {
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: justify;
+      margin-bottom: 30px;
+    }
+
+    .photos-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      gap: 20px;
+    }
+
+    .photo {
+      width: 31%;
+      height: auto;
+    }
+
+    .photo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      .about-content {
+        flex-direction: column;
+      }
+
+      .about-column {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 15px 20px;
+      }
+
+      nav {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        margin: 5px 10px 5px 0;
+      }
+
+      .about-section {
+        padding: 20px;
+      }
+
+      .about-section h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+      }
+      
+      .photos-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .photo {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        font-size: 20px;
+      }
+
+      nav a {
+        font-size: 14px;
+      }
+
+      .about-section h1 {
+        font-size: 28px;
+      }
+
+      .about-column h2 {
+        font-size: 20px;
+      }
+
+      .about-column p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">РК "ЗШ"</a>
+    <nav>
+      <a href="blog.html">Головна</a>
+      <a href="team.html">Команда</a>
+      <a href="about.html" class="active">Про нас</a>
+      <a href="contacts.html">Контакти</a>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <h1>Про нас</h1>
+    
+    <div class="about-content">
+      <div class="about-column">
+        <h2>Наша місія</h2>
+        <p>Ми об'єднуємо молодь і дорослих через регбі — гру сили, честі та командного духу. Наша місія — розвивати регбі в Закарпатті.</p>
+      </div>
+      
+      <div class="about-column">
+        <h2>Наше бачення</h2>
+        <p>Залишити слід у серці кожного гравця та вболівальника через силу командного духу, чесної гри та атмосферу єдності.</p>
+      </div>
+    </div>
+    
+    <div class="photos-container">
+      <div class="photo">
+        <img src="photo_2025-04-25_12-47-11.jpg" alt="Команда на нагородженні">
+      </div>
+      <div class="photo">
+        <img src="photo_2025-02-08_15-22-27.jpg" alt="Команда на тренуванні">
+      </div>
+      <div class="photo">
+        <img src="photo_2024-10-24_22-40-00.jpg" alt="Команда на змаганнях">
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
